@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  server: {
-    open: '/index.html', 
-    base: "/Eldorado/"
-  }
+    server: {
+        open: '/index.html', 
+        base: "/Eldorado/"
+    }
 });
