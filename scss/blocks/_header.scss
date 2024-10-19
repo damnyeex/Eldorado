@@ -1,0 +1,62 @@
+
+.samsung-mobile p {
+    display: none; 
+}
+
+.header p {
+    @include fontOptions(14px, 500, 21px);
+    opacity: 70%;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-sizing: border-box; 
+    padding: 7px 25px 4px;
+}
+
+.header-logo__wrapper {
+    display: flex;
+    align-items: center; 
+}
+
+.header-logo__wrapper p {
+   margin-left: 6px;
+}
+
+.header-menu__wrapper button{
+    display: flex;
+    background-color: transparent;
+    border: 0;
+}
+
+.header__logo {
+    margin-right: 20px; 
+}
+
+.header__logo:last-child {
+    margin-right: 0;
+}
+
+.header__menu {
+    width: 32;
+    height: 32;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 1px; 
+    background-color: $progress-bar-bg-color;
+    position: relative; 
+
+    
+    &::before {
+        content: '';
+        position: absolute; 
+        left: 0;
+        height: 3px; 
+        width: var(--fill-percent); 
+        background-color: $progress-bar-color; 
+    }
+}

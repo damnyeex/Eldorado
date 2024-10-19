@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'PT Root UI', sans-serif;
+}
+
+.container {
+    @include min-max(320px, 100%);
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+

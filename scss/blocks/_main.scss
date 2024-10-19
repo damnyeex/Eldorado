@@ -1,0 +1,232 @@
+.main {
+    padding: 0 25px;
+}
+
+.main h1 {
+    @include fontOptions(38px, 700, 50px);
+    margin-top:35px;
+    margin-bottom: 40px;
+}
+
+.main__design {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    
+} 
+
+.main__design h2 {
+    @include fontOptions(30px, 700, 40px);
+    width: 100%;
+    margin-bottom: 54px;
+}
+
+.main__design-card-list {
+    display: flex; 
+    flex-wrap: wrap;  
+    align-items: flex-start; 
+    justify-content: space-between; /* Элементы распределяются по всей ширине */
+    list-style-type: none;
+    margin-bottom: 60px;
+}
+
+
+.main__design-card-list ul{
+    display: flex;  
+    list-style-type: none;
+    column-gap: 20px;
+}
+
+
+.infinity-wrapper{
+    width: 222px;
+    height: 304px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #171717;
+}
+
+
+.colours-wrapper,
+.samsung-wrapper,
+.gorrilla-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 223px;
+    
+}
+
+
+.infinity-wrapper p {
+    @include fontOptions(14px, 500, 21px);
+    color: #FFFFFF;
+    width: 189px;
+}
+
+.samsung-wrapper p {
+    @include fontOptions(16px, 500, 24px);
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    color: $bg-color;
+    padding-top: 20px;
+}
+
+
+.colours-wrapper p,
+.gorrilla-wrapper p {
+    @include fontOptions(16px, 500, 24px);
+    color: $bg-color;
+}
+
+.infinity-wrapper img,
+.samsung-wrapper img,
+.colours-wrapper img,
+.gorrilla-wrapper img {
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.video {
+    display: none; // Оба заголовка скрыты по умолчанию
+}
+
+.main__scanner {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    padding-top: 39px;
+}
+
+.main__scanner h2 {
+    @include fontOptions(30px, 700, 40px);
+    margin-bottom:50px
+}
+
+.main__scanner img {
+    height: 248px;
+}
+
+.main__scanner-wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__scanner-card-list {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.main__scanner-card-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px
+}
+
+.main__scanner-card-item img {
+    width: 60px;
+    height: 60px;
+}
+
+.main__scanner-card-list p {
+    width: 343px;
+    @include fontOptions(16px, 500, 24px);
+    margin-left:40px;
+}
+
+.main__accessories {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.main__accessories h2 {
+    @include fontOptions(30px, 700, 40px);
+    margin-bottom:50px
+}
+
+.main__accessories-card-list {
+    list-style-type: none;
+    display: flex; 
+    flex-wrap: wrap;  
+    align-items: flex-start; 
+    list-style-type: none;
+    column-gap: 20px;
+}
+
+.main__accessories-card-list ul {
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: flex-start; 
+    column-gap: 20px;
+
+}
+
+.main__accessories-card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main__accessories-card-list p {
+    width: 220px;
+    @include fontOptions(16px, 500, 24px);
+}
+
+.main-divider {
+    position: relative;
+    height: 1px;
+    width: 222px; 
+    background-color: $progress-bar-bg-color; 
+    margin: 25px 0 20px 0; 
+}
+
+.main-divider.filled::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 20%;
+    background-color: $bg-color; 
+    z-index: -1; 
+}
+
+.main__applications_services {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    padding-top: 40px;
+    padding-bottom: 100px
+}
+
+.main__applications_services h2 {
+    @include fontOptions(30px, 700, 40px);
+    margin-bottom: 50px
+}
+
+.main__applications_services-card-list {
+    display: flex; 
+    flex-wrap: wrap;  
+    align-items: flex-start; 
+    list-style-type: none;
+    column-gap: 20px;
+}
+
+.main__applications_services-card-item {
+    width: 303px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__applications_services-card-item img {
+    padding-bottom: 20px;
+}
+
+.main__applications_services-card-list p {
+    @include fontOptions(16px, 500, 24px)
+}
+
